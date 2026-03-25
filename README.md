@@ -59,7 +59,7 @@ source .venv/bin/activate
 python gui_web.py
 ```
 
-A tab opens at `http://127.0.0.1:…/`; keep the terminal open and press Enter there when you’re done to stop the server.
+A tab opens at `http://127.0.0.1:…/`; keep the terminal open and press Enter there when you’re done to stop the server. You can **choose cover art with the file picker** (JPEG/PNG) instead of typing a path; an optional path field remains for edge cases.
 
 **Desktop (needs Tk):**
 
