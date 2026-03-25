@@ -1,0 +1,18 @@
+# Audio file written by yt-dlp (requires ffmpeg for conversion).
+# Use "m4a" for AAC in M4A (native for Apple); "mp3" is widely compatible.
+audio_format: m4a
+
+# How to add files to Music: applescript (recommended if auto-add folder fails) or auto_add_folder
+import_method: applescript
+
+# If null, uses: ~/Music/Music/Media/Automatically Add to Music
+# Override if your Music media folder lives elsewhere (Music → Settings → Files).
+auto_add_folder: null
+
+# First matching rule wins. Groups are 1-based regex capture groups.
+# If no rule matches, SoundCloud title / yt-dlp metadata is used as-is for tags.
+rules:
+  - name: artist_dash_title
+    pattern: "^(.+?)\\s*-\\s*(.+)$"
+    artist_group: 1
+    title_group: 2
